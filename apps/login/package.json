@@ -1,10 +1,9 @@
 {
-  "name": "@fabs-ui/ds",
+  "name": "@fabs-ui/login",
   "version": "0.0.1",
   "private": true,
   "exports": {
-    "./*": "./src/*.tsx",
-    "./*.css": "./src/*.css"
+    "./*": "./src/*.tsx"
   },
   "scripts": {
     "dev": "vite",
@@ -16,23 +15,20 @@
   },
   "devDependencies": {
     "@fabs-ui/infrastructure": "workspace:*",
-    "@types/node": "^22.15.3",
+    "@types/node": "^22.16.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
     "eslint": "^9.30.0",
-    "tw-animate-css": "^1.3.5",
     "typescript": "5.8.2",
     "vite": "^7.0.4"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.2.3",
-    "@tailwindcss/vite": "^4.1.11",
+    "@fabs-ui/ds": "workspace:*",
     "@vitejs/plugin-react": "^4.6.0",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.11"
+    "react-router-dom": "^7.6.3",
+    "tailwindcss": "^4.1.11",
+    "tw-animate-css": "^1.3.5"
   }
 }
