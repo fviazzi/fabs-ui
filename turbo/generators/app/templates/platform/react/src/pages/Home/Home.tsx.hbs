@@ -1,9 +1,11 @@
+import React from 'react'
+
 {{#if isAtomic}}
-import { Example } from '@/components/atoms/Example';
 import { Counter } from '@/components/molecules/counter/Counter';
+import { Example } from '@/components/atoms/Example';
 {{else}}
-import { Example } from '@/components/shared/Example/Example';
 import { Counter } from '@/components/Counter/Counter';
+import { Example } from '@/components/shared/Example/Example';
 {{/if}}
 
 export const Home = () => (

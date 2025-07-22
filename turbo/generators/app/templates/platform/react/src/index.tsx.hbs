@@ -1,13 +1,13 @@
-import React from 'react';
+import * as React from 'react';
+
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { store } from '@/core/store/store';
 
+import { Router } from "@/core/router/Router";
+import { store } from '@/core/store/store';
 {{#if ds}}
 import "@fabs-ui/ds/css";
 {{/if}}
-
-import { Router } from "./core/router/Router";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
