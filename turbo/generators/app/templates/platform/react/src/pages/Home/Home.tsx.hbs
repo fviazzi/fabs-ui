@@ -1,7 +1,9 @@
 {{#if isAtomic}}
 import { Example } from '@/components/atoms/Example';
+import { Counter } from '@/components/molecules/counter/Counter';
 {{else}}
 import { Example } from '@/components/shared/Example/Example';
+import { Counter } from '@/components/Counter/Counter';
 {{/if}}
 
 export const Home = () => (
@@ -12,6 +14,9 @@ export const Home = () => (
     <p className="mb-4">
       This is a React application generated with the Fabs UI Turbo generator.
     </p>
+    <hr />
     <Example />
+    <hr />
+    <Counter />
   </main>
 );
