@@ -1,0 +1,35 @@
+{
+  "name": "{{name}}",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./*": "./src/*.tsx"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts,.tsx",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    {{#if ds}}
+    "@fabs-ui/ds": "workspace:*",
+    {{/if}}
+    "@vitejs/plugin-react": "^4.6.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "devDependencies": {
+    "@fabs-ui/infrastructure": "workspace:*",
+    "@types/node": "^22.16.3",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1",
+    "eslint": "^9.30.0",
+    "typescript": "5.8.2",
+    "vite": "^7.0.4"
+  }
+}

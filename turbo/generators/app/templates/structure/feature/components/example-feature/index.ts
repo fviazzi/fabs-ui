@@ -1,0 +1,2 @@
+// Example feature module
+export {};

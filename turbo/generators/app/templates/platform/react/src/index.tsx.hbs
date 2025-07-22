@@ -1,0 +1,13 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+{{#if ds}}
+import "@fabs-ui/ds/css";
+{{/if}}
+
+import { Router } from "./core/router/Router";
+
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <React.StrictMode>
+    <Router />
+  </React.StrictMode>,
+);

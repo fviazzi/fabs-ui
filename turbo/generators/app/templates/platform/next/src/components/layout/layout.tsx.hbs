@@ -1,0 +1,13 @@
+{{#if ds}}
+import "@fabs-ui/ds/css";
+{{/if}}
+
+type LayoutProps = {
+  children: React.ReactNode;
+}
+
+export const Layout = ({ children }: LayoutProps) => (
+  <>
+    {children}
+  </>
+);

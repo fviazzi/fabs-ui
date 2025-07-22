@@ -1,0 +1,9 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  {{#if ds}}
+  transpilePackages: ["@fabs-ui/ds"],
+  {{/if}}
+};
+
+module.exports = nextConfig;

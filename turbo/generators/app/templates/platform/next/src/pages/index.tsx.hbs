@@ -1,0 +1,23 @@
+{{#if isAtomic}}
+import { Example } from '@/components/atoms/Example';
+{{else}}
+import { Example } from '@/components/shared/Example/Example';
+{{/if}}
+
+import { Layout } from '@/components/layout/layout';
+
+const Home = () => (
+  <Layout>
+    <main className="min-h-screen flex flex-col items-center justify-center p-4">
+      <h1 className="text-4xl font-bold mb-4">
+        Welcome to {`testing-next`}
+      </h1>
+      <p className="mb-4">
+        This is a React application generated with the Fabs UI Turbo generator.
+      </p>
+      <Example />
+    </main>
+  </Layout>
+);
+
+export default Home;

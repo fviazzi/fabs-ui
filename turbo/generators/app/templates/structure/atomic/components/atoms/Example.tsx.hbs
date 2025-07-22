@@ -1,0 +1,14 @@
+{{#if ds}}
+import { Button } from '@fabs-ui/ds';
+{{/if}}
+
+export const Example = () => (
+  <div className="flex flex-col items-center justify-center h-full">
+    <h1 className="text-2xl font-bold mb-4">Example Component</h1>
+    {{#if ds}}
+    <Button variant="destructive">Destructive button with DS</Button>
+    {{else}}
+    <button className="px-4 py-2 bg-blue-500 text-white rounded">No DS</button>
+    {{/if}}
+  </div>
+);
