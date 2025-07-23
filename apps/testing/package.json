@@ -1,0 +1,37 @@
+{
+  "name": "testing",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./*": "./src/*.tsx"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fabs-ui/ds": "workspace:*",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
+    "@reduxjs/toolkit": "^2.3.0",
+    "react-redux": "^9.1.0"
+  },
+  "devDependencies": {
+    "@fabs-ui/infrastructure": "workspace:*",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/node": "^22.16.3",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.30.0",
+    "tailwindcss": "^4.1.11",
+    "typescript": "5.8.2",
+    "vite": "^7.0.4",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}

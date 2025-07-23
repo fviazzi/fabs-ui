@@ -1,0 +1,9 @@
+{{#if isAtomic}}
+import counterReducer from '@/components/molecules/counter/counterSlice';
+{{else}}
+import counterReducer from '@/components/Counter/counterSlice';
+{{/if}}
+
+export const combinedReducers = {
+  counter: counterReducer,
+};

@@ -1,0 +1,24 @@
+import React from 'react'
+
+{{#if isAtomic}}
+import { Counter } from '@/components/molecules/counter/Counter';
+import { Example } from '@/components/atoms/Example';
+{{else}}
+import { Counter } from '@/components/Counter/Counter';
+import { Example } from '@/components/shared/Example/Example';
+{{/if}}
+
+export const Home = () => (
+  <main className="min-h-screen flex flex-col items-center justify-center p-4">
+    <h1 className="text-4xl font-bold mb-4">
+      Welcome to {`{{name}}`}
+    </h1>
+    <p className="mb-4">
+      This is a React application generated with the Fabs UI Turbo generator.
+    </p>
+    <hr />
+    <Example />
+    <hr />
+    <Counter />
+  </main>
+);
