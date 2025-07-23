@@ -12,15 +12,20 @@ This project is a turborepo project containing multiple applications and shared 
 ## Libraries and Frameworks
 
 - React and Tailwind CSS with shadcn for the frontend.
+- Vite for the build tool.
+- Turborepo for monorepo management.
+- ESLint for linting JavaScript and TypeScript code.
+- Vitest for testing.
+- TypeScript for type safety.
+- We import UI components from the design system in the frontend applications using "@fabs-ui/ds".
 
 ## Coding Standards
 
-- Use semicolons at the end of each statement.
-- Use single quotes for strings.
-- Use function based components in React.
-- Use arrow functions for callbacks.
+- Follow eslint.config.mjs for JavaScript and TypeScript linting.
 
-## UI guidelines
+## Design system
 
-- A toggle is provided to switch between light and dark mode.
-- Application should have a modern and clean design.
+- The design system is a package that provides reusable UI components and styles.
+- It is built with Tailwind CSS and shadcn.
+- The design system is imported into frontend applications using "@fabs-ui/ds".
+- Each components should have a storybook story for documentation and testing purposes.
