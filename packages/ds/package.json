@@ -9,11 +9,12 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./css": "./dist/index.css"
+    "./css": "./dist/index.css",
+    "./tailwind.config": "./tailwind.config.js"
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp tailwind.config.js dist/",
     "preview": "vite preview",
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
